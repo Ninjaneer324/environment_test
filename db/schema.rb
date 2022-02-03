@@ -17,11 +17,11 @@ ActiveRecord::Schema.define(version: 2022_02_03_205644) do
 
   create_table "books", force: :cascade do |t|
     t.string "title"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.string "author"
     t.decimal "price"
     t.datetime "published_date"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
 end
