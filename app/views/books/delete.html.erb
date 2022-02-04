@@ -1,0 +1,8 @@
+<h1>Deleting Book</h1>
+
+<p>Are you sure you want to permanently delete this book?</p>
+<p><%= @book.title %></p>
+
+
+
+<%= link_to 'Destroy', @book, method: :delete, data: { confirm: 'Are you sure?' } %>
